@@ -1,0 +1,6 @@
+#!/bin/bash
+read -p "File Name: " fn
+touch "$fn"
+echo "#!/usr/bin/python3" > "$fn"
+chmod u+x "$fn"
+vi "$fn"
